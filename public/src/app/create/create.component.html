@@ -1,0 +1,16 @@
+<h3>Add a Pet!</h3> <button [routerLink]="['/']">home</button>
+{{ msg }}
+<div class="create_form">
+  <form (submit)="onSubmit_create(myform)" #myform="ngForm">
+    name: <br><input type="text" ngModel name="name"/><br>
+    type: <br><input type="text" ngModel name="type"><br>
+    description: <br><textarea ngModel name="description"></textarea><br>
+    <hr>
+    skills:<br>
+    skill 1: <input type="text" ngModel name="skill1"><br>
+    skill 2: <input type="text" ngModel name="skill2"><br>
+    skill 2: <input type="text" ngModel name="skill3"><br>
+    <input type="submit" value="create">
+  </form>
+  <button [routerLink]="['/']">cancel</button>
+</div>

@@ -1,0 +1,13 @@
+<div *ngIf='pet'> 
+    {{ pet | json }}
+<h3><u><b>{{pet.name}}'s</b></u> details</h3> <br>
+<button [routerLink]="['/']">home</button><br>
+<br>
+pet type: {{pet.type}}<br>
+description: {{pet.description}}<br>
+skills:<br>
+-> {{pet.skill1}}<br>
+-> {{pet.skill2}}<br>
+-> {{pet.skill3}}<br>
+<button (click)="remove(pet)">remove</button>
+</div>

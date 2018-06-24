@@ -1,0 +1,25 @@
+<h3><a [routerLink]="['/create']">add a pet to the shelter</a></h3>
+
+<table>
+    <thead>
+      <td>name</td>
+      <td>type</td>
+      <td>actions</td>
+    </thead>
+    <tbody *ngFor="let pet of allpets_arr">
+      <tr>
+        <td>{{pet.name}}</td>
+        <td>{{pet.type}}</td>
+        <td><a [routerLink]="['details/', pet._id]"> details </a> | <a [routerLink]="['edit/', pet._id]"> edit </a></td>
+      </tr>
+    </tbody>
+  </table>
+
+  
+  <!-- <div *ngFor="let product of allproducts_arr" class="products_list">
+      <img src="http://www.kinyu-z.net/data/wallpapers/127/1149207.jpg" alt="">
+      <br> {{product.name}}
+      <br> {{product.price}}
+      <br>
+    </div> -->
+  

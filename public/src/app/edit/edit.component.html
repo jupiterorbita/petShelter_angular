@@ -1,0 +1,21 @@
+<div *ngIf='pet'>
+{{ pet | json }}
+{{ pet.name | json }}
+{{ pet.type | json }}
+<h1>EDIT -> {{pet.name}}</h1>
+{{ msg }}
+<div class="create_form">
+  <form (submit)="update()" >
+    name: <br><input type="text" [(ngModel)]="pet.name" name="name" ><br>
+    type: <br><input type="text" [(ngModel)]="pet.type" name="type" ><br>
+    description: <br><textarea ng-model="description" name="description"[(ngModel)]="pet.description">{{pet.description}}</textarea><br>
+    <hr>
+    skills:<br>
+    skill 1: <input type="text" [(ngModel)]="pet.skill1" name="skill1" ><br>
+    skill 2: <input type="text" [(ngModel)]="pet.skill2" name="skill2" ><br>
+    skill 2: <input type="text" [(ngModel)]="pet.skill3" name="skill3" ><br>
+    <input type="submit" value="create">
+  </form>
+  <button [routerLink]="['/']">cancel</button><br><br>
+</div>
+</div>

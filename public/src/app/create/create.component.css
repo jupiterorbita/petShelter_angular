@@ -1,0 +1,7 @@
+div.create_form{
+    border: 1px solid grey;
+    border-radius: 2px;
+    background-color: rgb(159, 218, 218);
+    width: 400px;
+    height: 250px;
+}
