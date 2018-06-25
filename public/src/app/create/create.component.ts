@@ -15,12 +15,10 @@ export class CreateComponent implements OnInit {
   msg = '';
   constructor(
     private _petService: PetService,
-    private _route: ActivatedRoute,
     private _router: Router) { console.log('createComponent > inside constructor'); }
 
   ngOnInit() {
     console.log('createComponent > ngOnInit()');
-    // this._route.params.subscribe((params: Params) => console.log('createComponent > ngOnInit() > params["id"] =>', params['id']));
   }
 
   goHome() {

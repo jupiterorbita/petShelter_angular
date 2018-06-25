@@ -1,6 +1,5 @@
 import { EditComponent } from './edit/edit.component';
 import { DetailsComponent } from './details/details.component';
-// import { AppComponent } from './app.component';
 import { CreateComponent } from './create/create.component';
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';

@@ -2,7 +2,6 @@ const mongoose = require("mongoose");
 const Pet = mongoose.model("Pet");
 
 module.exports = {
-
     //=================  Root retrieve all INDEX =============
     getall: function(req, res) {
         console.log('\n SERVER > CONTROLLER > productController > showall');
@@ -70,6 +69,8 @@ module.exports = {
 
     // ============ DELETE ===============
     delete: function(req, res) {
+      console.log("@@@@@@@",req.params);
+      
         Pet.remove({ _id: req.params.id }, function(err) {
         console.log("DELETEING PET =>", req.params.id);
         if (err) {

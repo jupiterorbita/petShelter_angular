@@ -66,7 +66,7 @@ export class EditComponent implements OnInit {
         } else {
           this.msg = '';
         }
-        console.log(server_response);
+        console.log('Component > editComponent > update() >> server_response', server_response);
       },
       err => {
         console.log('ERROR: ', err);
